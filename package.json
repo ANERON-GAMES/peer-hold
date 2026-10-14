@@ -1,0 +1,35 @@
+{
+  "name": "@aneron/peer-hold",
+  "version": "1.0.0",
+  "description": "In one realtime room, a reconnect replaces the previous peer, a silent peer is dropped, and the signal queue forgets signals whose sender has already left.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ANERON-GAMES/peer-hold.git"
+  },
+  "files": [
+    "src",
+    "LICENSE",
+    "README.md"
+  ],
+  "main": "./src/index.js",
+  "exports": "./src/index.js",
+  "sideEffects": false,
+  "scripts": {
+    "test": "node --test",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.12.0",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^17.13.0",
+    "prettier": "^3.9.10"
+  }
+}
